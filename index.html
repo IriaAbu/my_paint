@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibújame</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="../Outils-Projets/jQuery.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="container" style="background-color: grey;">
+
+        <div class="tools">
+            <input type="file" class="edition" id="open" name="openFile"/>
+            <img class="input-preview" src="http://placehold.it/654x363" style="width:280px;height:150px;display:none;" />
+            <button class="edition" id="clear">Nouveau</button>
+            <button class="edition" id="save">Enregistrer sous</button>
+
+            <input type="range" class="tool" id="toolSize" min="1" max="200" value="10" />
+            <input type="color" class="tool" id="toolColor" />
+            <a href="#" title="En arrière" class="tool" id="undo"> &#8617;</a>
+            <a href="#" title="Gomme" class="tool" id="toolGomme">&#9725;</a>
+            <div class="toolOptions">
+                <a href="#" title="Cercle vide" class="tool" id="toolCircleVide">&#9711;</a>
+                <a href="#" title="Cercle rempli" class="tool" id="toolCircleRempli">&#9673;</a>
+            </div>
+            <div class="toolOptions">
+                <a href="#" title="Rectangle vide" class="tool" id="toolRectangleVide">&#9723;</a>
+                <a href="#" title="Rectangle rempli" class="tool" id="toolRectangleRempli">&#9724;</a>
+            </div>
+            <a href="#" title="Line" class="tool" id="toolLine">&#9586;</a>
+            <a href="#" title="Crayon" class="tool" id="toolPencil">&#8767;</a>
+        </div>
+
+        <div class="myPaintCanvas">
+            <canvas id="canvas" width="400" height="400" style="background-color: white;"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
